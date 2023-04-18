@@ -1,0 +1,19 @@
+##OpenGL GLIB
+LookAt 0 0 3  0 0 0  0 1 0
+Perspective 70
+
+
+Vertex   oval.vert
+Fragment oval.frag
+Program  Oval				\
+	uAd <.01 .05 .5>		\
+	uBd <.01 .05 .5>		\
+	uTol <0. 0. 1.>			\
+	uNoiseAmp <0. 0. 1.>  	\
+	uNoiseFreq <0. 1. 10.>   \
+	uAlpha <0. 1. 1.>		
+
+
+Color 1. .9 0
+Obj bunny010n.obj
+//Sphere 1 50 50

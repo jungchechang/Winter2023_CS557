@@ -1,0 +1,42 @@
+##OpenGL GLIB
+
+Perspective 70
+LookAt 0 0 3  0 0 0  0 1 0
+
+
+Vertex   texture.vert
+Fragment texture.frag
+Program  Texture  TexUnit 6
+
+Texture2D  6  posx.bmp
+QuadYZ 20. 20. 10 10
+Texture2D  6 negx.bmp
+QuadYZ -20. 20. 10 10
+Texture2D  6  posy.bmp
+QuadXZ 20. 20. 10 10
+Texture2D  6  negy.bmp
+QuadXZ -20. 20. 10 10
+Texture2D  6  posz.bmp
+QuadXY 20. 20. 10 10
+Texture2D  6  negz.bmp
+QuadXY -20. 20. 10 10
+
+
+
+CubeMap 6 posx.bmp negx.bmp  posy.bmp negy.bmp   posz.bmp negz.bmp
+Vertex  	    ripple.vert
+Fragment        ripple.frag
+Program Ripple                                     \
+                uX1 <-1.0, 0.9, 1.0>                   \
+                uY1 <-1.0, 0.00, 1.0>                   \
+                uAmp1 <0.0 0.00 .03>                   \
+                uFreq1 <0.0 3.0, 3.0>                    \
+                uX2 <-1.0, -1.00, 1.0>                   \
+                uY2 <-1.0, -0.02, 1.0>                   \
+                uAmp2 <0.0 0.00, .03>                   \
+                uFreq2 <0.0 3.0 3.0>                    \
+
+
+
+
+QuadXY  -0.2  1. 128  128
