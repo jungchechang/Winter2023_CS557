@@ -24,7 +24,7 @@ Here is a summary of my projects from the CS 457 - Computer Graphics Shaders cou
 
 ## The Bunny Menagerie project
 
-<img src="readme/project6.png" width=500px>
+<img src="readme/project6.gif" width=500px>
 
 ## Geometry Shaders: Quantizing in Cylindrical Coordinates
 
